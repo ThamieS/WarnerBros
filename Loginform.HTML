@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEEDBACK</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #fldset{
+            background: linear-gradient(to bottom, #f1f1f1, #eb7373);
+            width: 80%;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            background-color: hwb(348 95% 3%);align-items: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="divmaincontainer" class="master">
+        <!--This is the site header-->
+        <header id="banner" class="master">
+            <img src="IMAGES/warner-bros-logo-png-transparent.png" alt="Logo" class="logo">
+            <h1 id="sitetitle">Warner Bros</h1>
+            <p id="sitemotto">The magic of entertainment</p>
+        </header>
+
+        <!--These are the navigation links-->
+        <nav id="navmenu" class="master">
+            <ul id="ulmenu">
+                <li><a href="WarnerBros.html">HOME</a></li>
+                <li><a href="movies.html">MOVIES</a></li>
+                <li><a href="tvshows.html">TV SHOWS</a></li>
+                <li><a href="gamesandapps.html">GAMES AND APPS</a></li>
+                <li><a href="Loginform.HTML">FEEDBACK</a></li>
+            </ul>
+        </nav>
+    <fieldset id="fldset">
+        <Legend>FEEDBACK</Legend>
+        <input type="hidden" id="flduserid" name="flduserid"/>
+        <p>
+            <label for="firstname">Firstname</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Firstname" required/>
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" name="surname" placeholder="Firstname" required/>
+        </p>
+        <p>
+            <label>Would you recommend Warner Bros to your friend?</label><br/>
+            <label>Yes</label>
+            <input type="radio" id="yes" name="WouldyourecommendWarnerBrostoyourfriend?" value="Yes"/>
+            <label>No</label>
+            <input type="radio" id="no" name="WouldyourecommendWarnerBrostoyourfriend?" value="No"/>
+        </p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        <p>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </p>
+        <button type="submit">Submit</button>
+    </fieldset>
+
+    </body>
+    </html>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body{
+            background-color:#152733 ;
+            overflow: hidden;
+            height: 100%;
+            font-style: italic;
+            color: white;
+            font-size: large;
+        }
+        fieldset{
+            justify-content: center;
+            border: none;
+            
+        }
+    </style>
+</head>
+<body>
+     <fieldset id="fldset">
+        <legend>User Registration</legend>
+        <input type="hidden" id="flduserid" name="flduserid"/>
+        <p>
+            <label for="firstname">Firstname</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Firstname" required/>
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" name="surname" placeholder="Surname" required/>
+        </p>
+        <p>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="0">Select...</option>
+                <option value="F">Female</option>
+                <option value="M">Male</option>
+                <option value="S">Secret</option>
+            </select>
+        </p>
+        <p>
+            <label for="dob">DOB</label>
+                <input type="date" id="dob" name="dob" required/>
+        </p>
+        <p>
+            <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="EmailAddress" required/>
+        </p>
+        <p>
+            <label for="password">Password</label>
+                <input type="password" id="password" name="password" required/>
+        </p>
+        <p><label for="cellno">Cell Number</label>
+                <input type="tel" id="cellno" name="cellno" placeholder="CellNumber" required/>
+        </p>
+        <p>
+            <label for="address">Address</label>
+            <textarea id="address" name="address" lines="5"></textarea><br/>
+        </p>
+            <input type="reset" id="btnclear" name="btnclear" value="Clear"/>
+            <input type="submit" id="btnsubmit" name="btnclear" value="submit"/>
+    </fieldset>
+</body>
+</html>
